@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>어린이 예술교육 프로그램</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+  margin: 0;
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  background-image: url("bg-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #e8eefc;
+  line-height: 1.6;
+}
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+  background: rgba(6, 12, 24, 0.45);
+  padding: 60px 0 40px;
+}
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+  font-size: 2.5rem;
+  margin: 0 0 16px;
+  color: #b9d7ff;
+}
+
+    .hero-text p {
+  font-size: 1.05rem;
+  margin: 0;
+  color: #d7e4ff;
+}
+
+    .hero-image {
+  border-radius: 24px;
+  min-height: 320px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(90, 70, 50, 0.12);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+    section {
+      padding: 56px 0;
+    }
+
+    .section-desc {
+  text-align: center;
+  margin: 0 auto 36px;
+  max-width: 700px;
+  color: #c7d6f3;
+}
+
+
+    .section-desc {
+  text-align: center;
+  margin: 0 auto 36px;
+  max-width: 700px;
+  color: #c7d6f3;
+}
+
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+  background: rgba(18, 32, 56, 0.78);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(140, 180, 255, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+
+    .tag {
+  display: inline-block;
+  background: rgba(130, 170, 255, 0.18);
+  color: #d7e6ff;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+    .card h3 {
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+  color: #f2f7ff;
+}
+
+.card p {
+  margin: 0;
+  color: #d5e1f4;
+  font-size: 0.98rem;
+}
+
+    .contact-box {
+  background: rgba(14, 26, 46, 0.95);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+  text-align: center;
+  border: 1px solid rgba(140, 180, 255, 0.15);
+}
+    .contact-box h2 {
+  margin-top: 0;
+  color: #b9d7ff;
+  font-size: 1.8rem;
+}
+
+.contact-box p {
+  margin: 10px 0;
+  color: #d6e2f5;
+  font-size: 1rem;
+}
+
+
+    footer {
+      text-align: center;
+      padding: 24px 0 40px;
+      color: #8c7a6f;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .hero-image {
+        min-height: 260px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 44px 0 28px;
+      }
+
+      section {
+        padding: 42px 0;
+      }
+
+      .hero-text h1 {
+        font-size: 1.7rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      .contact-box {
+        padding: 24px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <div class="hero-text">
+        <h1>푸른별 지구 연구소</h1>
+        <p>
+          아이들이 지구와 생태를 감각적으로 탐구하고,
+  예술로 표현하며 상호연결성과 책임감을 배워가는
+  어린이 융합예술교육 프로그램입니다.
+        </p>
+      </div>
+      <div class="hero-image">
+  <img src="푸른별 포스터1.jpg" alt="푸른별 지구 연구소 대표 이미지">
+</div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h2 class="section-title">프로그램 소개</h2>
+        <p class="section-desc">
+          아이들의 감정, 상상, 움직임, 이야기 표현을 중심으로 구성된 세 가지 예술교육 프로그램입니다.
+        </p>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="tag">창의 표현</div>
+            <h3>색으로 만나는 감정 놀이터</h3>
+            <p>다양한 색과 재료를 활용해 자신의 기분과 감정을 자유롭게 표현하는 프로그램입니다.</p>
+          </article>
+
+          <article class="card">
+            <div class="tag">이야기 예술</div>
+            <h3>상상 속 이야기 그림책 만들기</h3>
+            <p>이야기를 듣고, 장면을 상상하고, 직접 그림책으로 완성해보는 활동입니다.</p>
+          </article>
+
+          <article class="card">
+            <div class="tag">통합 예술</div>
+            <h3>몸짓과 소리로 그리는 예술 시간</h3>
+            <p>음악, 움직임, 선 그리기를 연결해 몸과 감각을 깨우는 프로그램입니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="contact-box">
+          <h2>문의하기</h2>
+          <p>프로그램 운영, 신청, 협력 문의</p>
+          <p>이메일: hello@example.com</p>
+          <p>전화: 010-1234-5678</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 어린이 예술교육 프로그램</footer>
+</body>
+</html>
